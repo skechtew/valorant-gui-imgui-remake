@@ -63,7 +63,7 @@ int main(int, char**)
         ImGui_ImplDX9_NewFrame();
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
-        float yarrak[4];
+        float colorPickerSelection[4];
         static int menu_selection = 0;
         {
             ImGui::Begin("##val", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoMove);
@@ -77,11 +77,11 @@ int main(int, char**)
             {
             case 0:
                 
-                ImGui::Checkbox("Box ESP", &show_demo_window,yarrak); 
-                ImGui::Checkbox("Distance ESP", &show_demo_window, yarrak);
-                ImGui::Checkbox("Name ESP", &show_demo_window, yarrak);
-                ImGui::Checkbox("Health ESP", &show_demo_window, yarrak);
-                ImGui::Checkbox("Teammate/Bot ESP", &show_demo_window, yarrak);
+                ImGui::Checkbox("Box ESP", &show_demo_window,colorPickerSelection); 
+                ImGui::Checkbox("Distance ESP", &show_demo_window, colorPickerSelection);
+                ImGui::Checkbox("Name ESP", &show_demo_window, colorPickerSelection);
+                ImGui::Checkbox("Health ESP", &show_demo_window, colorPickerSelection);
+                ImGui::Checkbox("Teammate/Bot ESP", &show_demo_window, colorPickerSelection);
 
                 break;
             case 1:
